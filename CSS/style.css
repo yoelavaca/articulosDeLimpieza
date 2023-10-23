@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300;800&family=Hanalei+Fill&family=Holtwood+One+SC&family=Peralta&family=Roboto+Condensed&family=Rubik+80s+Fade&family=Rubik+Storm&family=Shantell+Sans:wght@300&display=swap');
+
+body {
+    background-image: url(../assets/imagenes/fondo/4857721.jpg);
+    background-position: center;
+}
+
+.titulo {
+    font-family: 'Shantell Sans';
+    color: black;
+    font-family: 'Gluten';
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 70px;
+}
+
+.botones {
+    display: flex;
+    align-items: baseline;
+    flex-direction: center;
+    justify-content: center;
+    margin: 10px;
+    margin-block-end: 30px;
+}
+
+.botonHead {
+    border: 1px solid #2e518b;
+    padding: 10px;
+    background-color: #2e518b;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Helvetica', sans-serif;
+    border-radius: 50px;
+    margin: 5px;
+}
+
+nav ul {
+    list-style-type: none;
+    align-items: center;
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-end: 20px;
+}
+
+input[type="text"] {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+.product-container {
+    height: 300px;
+    overflow-y: scroll;
+    margin: 0;
+    padding: 5px;
+}
+
+.product {
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #f1f1f1;
+}
+
+.banner {
+    color: #45a049;
+    width: 100px;
+    margin-right: 10px;
+}
+
+.banner-banner {
+    background-color: #8b8b8b;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+}
+
+.pie-de-pagina {
+    font-family: 'Peralta', serif;
+}
+
+.banner-superior {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.formularioContent {
+    height: 350px;
+    width: 100px;
+    padding: 10px;
+    margin: 50px;
+}
+
+.contactoContent {
+    display: flex;
+    align-items: center;  
+    justify-content: space-around;
+}
+
+/* slider */
+
