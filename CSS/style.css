@@ -121,5 +121,22 @@ button[type="submit"]:hover {
     justify-content: space-around;
 }
 
-/* slider */
+/* boton flotante */
+
+.floating-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    padding: 10px;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.floating-button:hover {
+    background-color: #d32f2f;
+}
 
