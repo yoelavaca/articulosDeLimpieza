@@ -13,6 +13,7 @@
 
 <body>
     <button class="floating-button" onclick="scrollToTop()">Ir arriba</button>
+
     <div class="banner-banner">
         <div>
             <a href="https://www.google.com.ar/maps/place/Plaza+principal+San+Miguel+del+monte/@-35.4414594,-58.7975799,15z/data=!4m6!3m5!1s0x95bd6916547d6b31:0x97c9165fe00827f5!8m2!3d-35.4410344!4d-58.8035117!16s%2Fg%2F11c3kmj33d?entry=ttu"
@@ -28,7 +29,7 @@
                     src="./assets/imagenes/instagram.png" alt="" width="20px">Instagram</a>
         </div>
     </div>
-    
+
     <header>
         <h1 class="titulo">Tienda de articulos de limpieza</h1>
     </header>
@@ -42,19 +43,20 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="./index.html"><img src="./assets/imagenes/limpieza.png" width="50px" alt=""></a>
+                <a class="navbar-brand" href="./index.html"><img src="./assets/imagenes/limpieza.png" width="50px"
+                        alt=""></a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./pages/productos.html">Productos</a>
+                        <a class="nav-link active" aria-current="page" href="#productos-scrool">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./pages/contacto.html">Contacto</a>
+                        <a class="nav-link active" aria-current="page" href="#formulario-contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./pages/nosotros.html">Nosotros</a>
+                        <a class="nav-link active" aria-current="page" href="#quienes-somos">Nosotros</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
@@ -64,7 +66,14 @@
             </div>
         </div>
     </nav>
+    <section id="quienes-somos" class="sectionNostrosContenedor">
+        <p class="nosotrosP"> Sobre nosotros:
+            Somos una empresa dedicada a ofrecer productos de limpieza de alta calidad. Nuestro objetivo es brindar
+            soluciones efectivas y seguras para el hogar y el trabajo. ¡Confía en nosotros para mantener tus espacios
+            limpios y relucientes!
 
+            ¡Gracias por elegirnos! 🌟</p>
+    </section>
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div class="carousel-item active">
@@ -86,6 +95,63 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
+    <div id="productos-scrool" class="product-container">
+        <div class="product">Producto 1</div>
+        <div class="product">Producto 2</div>
+        <div class="product">Producto 3</div>
+        <div class="product">Producto 4</div>
+        <div class="product">Producto 5</div>
+        <div class="product">Producto 6</div>
+        <div class="product">Producto 7</div>
+        <div class="product">Producto 8</div>
+        <div class="product">Producto 9</div>
+        <div class="product">Producto 10</div>
+    </div>
+
+    <section id="formulario-contacto" class="contactoContent">
+        <form class="formularioContent">
+            <fieldset>
+                <legend>Formulario de compra</legend>
+
+                <label for="nombre">Nombre</label>
+                <input for="text" name="nombre">
+                <br>
+                <label for="tel">telefono</label>
+                <input for="numbre" name="tel" id="tel">
+                <br>
+                <label for="mail">Email*</label>
+                <input for="email" name="mail" id="email" required>
+                <br>
+                <label for="">Fecha de nacimiento</label>
+                <input type="date">
+                <br>
+                <label for="">Contraseña</label>
+                <input type="password">
+                <br>
+                <label for="">Envio a domicilio</label>
+                <input type="radio">Si
+                <input type="radio">No
+                <br>
+                <label for="">Mensaje</label>
+                <textarea name="" id="" cols="40" rows="5"></textarea>
+                <br>
+                <div>
+                    Acepta terminos y condiciones
+                    <input type="checkbox">
+                </div>
+                <br>
+                <input type="submit" id="enviar">
+                <input type="reset" id="restablecer">
+            </fieldset>
+        </form>
+        <br>
+        <div>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13002.154203697575!2d-58.7975799!3d-35.4414594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd6916547d6b31%3A0x97c9165fe00827f5!2sPlaza%20principal%20San%20Miguel%20del%20monte!5e0!3m2!1ses-419!2sar!4v1696785742140!5m2!1ses-419!2sar"
+                width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
 
     <aside class="pie-de-pagina">
         <p>🧹 ¡Gracias por visitar nuestra tienda virtual de productos de limpieza! 🧽
