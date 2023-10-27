@@ -5,15 +5,9 @@ body {
     background-position: center;
 }
 
-.titulo {
-    font-family: 'Shantell Sans';
-    color: black;
-    font-family: 'Gluten';
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-size: 70px;
+.superior {
+    margin: 0;
+    width: 50px;
 }
 
 .botones {
