@@ -111,7 +111,7 @@ button[type="submit"]:hover {
 
 .contactoContent {
     display: flex;
-    align-items: center;  
+    align-items: center;
     justify-content: space-around;
 }
 
@@ -134,3 +134,14 @@ button[type="submit"]:hover {
     background-color: #d32f2f;
 }
 
+/* slider prueba */
+
+.d-block {
+    align-items: center;
+    width: 200px;
+}
+
+#carousel-item-active {
+    display: flex;
+    justify-content: space-around;
+}

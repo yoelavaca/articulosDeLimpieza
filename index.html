@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,30 +9,26 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>articulos de limpieza</title>
 </head>
-
 <body>
     <button class="floating-button" onclick="scrollToTop()">Ir arriba</button>
-
     <div class="banner-banner">
         <div>
             <a href="https://www.google.com.ar/maps/place/Plaza+principal+San+Miguel+del+monte/@-35.4414594,-58.7975799,15z/data=!4m6!3m5!1s0x95bd6916547d6b31:0x97c9165fe00827f5!8m2!3d-35.4410344!4d-58.8035117!16s%2Fg%2F11c3kmj33d?entry=ttu"
-                class="banner-superior"><img src="./assets/imagenes/marcador-de-posicion.png" alt=""
-                    width="20px">Ubicación</a>
+                class="banner-superior"><img src="./assets/imagenes/marcador-de-posicion.png" alt="Ubicación"
+                    style="width: 20px;">Ubicación</a>
         </div>
         <div class="banner">
             <a href="https://wa.me/5492226507849" class="banner-superior"><img src="./assets/imagenes/whatsapp.png"
-                    alt="" width="20px">2226507849</a>
+                    alt="WhatsApp" style="width: 20px;">2226507849</a>
         </div>
         <div>
             <a href="https://www.instagram.com/yoeavaca/" class="banner-superior"><img
-                    src="./assets/imagenes/instagram.png" alt="" width="20px">Instagram</a>
+                    src="./assets/imagenes/instagram.png" alt="Instagram" style="width: 20px;">Instagram</a>
         </div>
     </div>
-
     <header class="superior-contenedor">
         <h1 class="superior"><img src="./assets/imagenes/banner.jpg" alt=""></h1>
     </header>
-
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
@@ -41,25 +36,24 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="./index.html"><img src="./assets/imagenes/limpieza.png" width="50px"
-                        alt=""></a>
+                <a class="navbar-brand" href="/"><img src="./assets/imagenes/limpieza.png" width="50px" alt=""></a>
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <a class="nav-link" href="/">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#productos-scrool">Productos</a>
+                        <a class="nav-link" href="#productos-scrool">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#formulario-contacto">Contacto</a>
+                        <a class="nav-link" href="#formulario-contacto">Contacto</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#quienes-somos">Nosotros</a>
+                        <a class="nav-link" href="#quienes-somos">Nosotros</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
+                    <input class="form-control me-2" type="text" placeholder="Buscar" aria-label="Buscar">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
                 </form>
             </div>
         </div>
@@ -69,12 +63,11 @@
             Somos una empresa dedicada a ofrecer productos de limpieza de alta calidad. Nuestro objetivo es brindar
             soluciones efectivas y seguras para el hogar y el trabajo. ¡Confía en nosotros para mantener tus espacios
             limpios y relucientes!
-
             ¡Gracias por elegirnos! 🌟</p>
     </section>
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
-            <div class="carousel-item active">
+            <div id="carousel-item-active" class="carousel-item active">
                 <img src="./assets/imagenes/slider/imagen1.jpg" class="d-block w-10" alt="...">
             </div>
             <div class="carousel-item">
@@ -86,11 +79,11 @@
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
+            <span class="visually-hidden">Anterior</span>
         </button>
         <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
+            <span class="visually-hidden">Siguiente</span>
         </button>
     </div>
     <div id="productos-scrool" class="product-container">
@@ -105,20 +98,18 @@
         <div class="product">Producto 9</div>
         <div class="product">Producto 10</div>
     </div>
-
     <section id="formulario-contacto" class="contactoContent">
         <form class="formularioContent">
             <fieldset>
                 <legend>Formulario de compra</legend>
-
                 <label for="nombre">Nombre</label>
-                <input for="text" name="nombre">
+                <input type="text" name="nombre">
                 <br>
-                <label for="tel">telefono</label>
-                <input for="numbre" name="tel" id="tel">
+                <label for="tel">Teléfono</label>
+                <input type="number" name="tel" id="tel">
                 <br>
                 <label for="mail">Email*</label>
-                <input for="email" name="mail" id="email" required>
+                <input type="email" name="mail" id="email" required>
                 <br>
                 <label for="">Fecha de nacimiento</label>
                 <input type="date">
@@ -126,15 +117,15 @@
                 <label for="">Contraseña</label>
                 <input type="password">
                 <br>
-                <label for="">Envio a domicilio</label>
-                <input type="radio">Si
-                <input type="radio">No
+                <label for="">Envío a domicilio</label>
+                <input type="radio" name="envio" value="si">Si
+                <input type="radio" name="envio" value="no">No
                 <br>
                 <label for="">Mensaje</label>
                 <textarea name="" id="" cols="40" rows="5"></textarea>
                 <br>
                 <div>
-                    Acepta terminos y condiciones
+                    Acepta términos y condiciones
                     <input type="checkbox">
                 </div>
                 <br>
@@ -150,32 +141,29 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
-
-    <aside class="pie-de-pagina">
-        <p>🧹 ¡Gracias por visitar nuestra tienda virtual de productos de limpieza! 🧽
-            <br>
-            🔒 Política de privacidad:
-            <br>
-            🌐 Enlaces útiles:
-            <br>
-            - [Preguntas frecuentes]
-            <br>
-            - [Envío y devoluciones]
-            <br>
-            - [Términos y condiciones]
-            <br>
-            🏆 Sellos de confianza:
-            - Certificación A
-            - Sello de seguridad B
-        </p>
-    </aside>
     <footer>
-
+        <aside class="pie-de-pagina">
+            <p>🧹 ¡Gracias por visitar nuestra tienda virtual de productos de limpieza! 🧽
+                <br>
+                🔒 Política de privacidad:
+                <br>
+                🌐 Enlaces útiles:
+                <br>
+                - [Preguntas frecuentes]
+                <br>
+                - [Envío y devoluciones]
+                <br>
+                - [Términos y condiciones]
+                <br>
+                🏆 Sellos de confianza:
+                - Certificación A
+                - Sello de seguridad B
+            </p>
+        </aside>
     </footer>
     <script src="./js/limpieza.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
 </body>
-
 </html>
