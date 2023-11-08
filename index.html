@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./CSS/style.css">
     <link rel="icon" href="./assets/imagenes/limpieza.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -27,37 +28,38 @@
         </div>
     </div>
     <header class="superior-contenedor">
-        <h1 class="superior"><img src="./assets/imagenes/banner.jpg" alt=""></h1>
-    </header>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
-                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                <a class="navbar-brand" href="/"><img src="./assets/imagenes/limpieza.png" width="50px" alt=""></a>
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="/">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#productos-scrool">Productos</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#formulario-contacto">Contacto</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#quienes-somos">Nosotros</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="text" placeholder="Buscar" aria-label="Buscar">
-                    <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                    aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                    <a class="navbar-brand" href="/"><img src="./assets/imagenes/limpieza.png" width="50px" alt=""></a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#productos-scrool">Productos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#formulario-contacto">Contacto</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#quienes-somos">Nosotros</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="text" placeholder="Buscar" aria-label="Buscar">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <h1 ><img src="./assets/imagenes/banner.jpg" alt="" class="superior"></h1>
+    </header>
+    
     <section id="quienes-somos" class="sectionNostrosContenedor">
         <p class="nosotrosP"> Sobre nosotros:
             Somos una empresa dedicada a ofrecer productos de limpieza de alta calidad. Nuestro objetivo es brindar
@@ -68,13 +70,13 @@
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div id="carousel-item-active" class="carousel-item active">
-                <img src="./assets/imagenes/slider/imagen1.jpg" class="d-block w-10" alt="...">
+                <img src="./assets/imagenes/slider/imagen1.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./assets/imagenes/slider/imagen2.jpg" class="d-block w-10" alt="...">
+                <img src="./assets/imagenes/slider/imagen2.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./assets/imagenes/slider/imagen3.jpg" class="d-block w-10" alt="...">
+                <img src="./assets/imagenes/slider/imagen3.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -134,10 +136,10 @@
             </fieldset>
         </form>
         <br>
-        <div>
+        <div class="map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13002.154203697575!2d-58.7975799!3d-35.4414594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd6916547d6b31%3A0x97c9165fe00827f5!2sPlaza%20principal%20San%20Miguel%20del%20monte!5e0!3m2!1ses-419!2sar!4v1696785742140!5m2!1ses-419!2sar"
-                width="450" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>

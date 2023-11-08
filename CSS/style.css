@@ -1,19 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Gluten:wght@300;800&family=Hanalei+Fill&family=Holtwood+One+SC&family=Peralta&family=Roboto+Condensed&family=Rubik+80s+Fade&family=Rubik+Storm&family=Shantell+Sans:wght@300&display=swap');
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
 
 body {
     background-image: url(../assets/imagenes/fondo/4857721.jpg);
     background-position: center;
+    font-size: 16px;
 }
 
 .superior {
-    margin: 0;
-    width: 50px;
+    max-width: 100%;
 }
 
 .botones {
     display: flex;
     align-items: baseline;
-    flex-direction: center;
     justify-content: center;
     margin: 10px;
     margin-block-end: 30px;
@@ -103,16 +108,21 @@ button[type="submit"]:hover {
 }
 
 .formularioContent {
-    height: 350px;
-    width: 100px;
     padding: 10px;
     margin: 50px;
 }
 
 .contactoContent {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+}
+
+.map-container {
+    width: 100%;
+    max-width: 600px;
+    margin: 20px auto;
 }
 
 /* boton flotante */
@@ -138,7 +148,7 @@ button[type="submit"]:hover {
 
 .d-block {
     align-items: center;
-    width: 200px;
+    width: 100%;
 }
 
 #carousel-item-active {
