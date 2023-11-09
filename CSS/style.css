@@ -155,3 +155,22 @@ button[type="submit"]:hover {
     display: flex;
     justify-content: space-around;
 }
+
+/* carrito */
+
+.cart-container {
+    position: fixed;
+    top: 70px;
+    right: 20px;
+    width: 200px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: none;
+}
+
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+}

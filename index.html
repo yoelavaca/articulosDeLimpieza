@@ -49,7 +49,14 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#quienes-somos">Nosotros</a>
                         </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#" onclick="toggleCart()">Carrito</a>
+                        </li>
                     </ul>
+                    <div id="cart" class="cart-container">
+                        <h3>Carrito</h3>
+                        <ul id="cart-items" class="cart-items"></ul>
+                    </div>
                     <form class="d-flex" role="search">
                         <input class="form-control me-2" type="text" placeholder="Buscar" aria-label="Buscar">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
@@ -57,7 +64,6 @@
                 </div>
             </div>
         </nav>
-        <h1 ><img src="./assets/imagenes/banner.jpg" alt="" class="superior"></h1>
     </header>
     
     <section id="quienes-somos" class="sectionNostrosContenedor">
@@ -70,13 +76,13 @@
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div id="carousel-item-active" class="carousel-item active">
-                <img src="./assets/imagenes/slider/imagen1.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/imagenes/slider/0001000253268ELITE.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./assets/imagenes/slider/imagen2.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/imagenes/slider/0001000353305ARTICULOS.jpg" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-                <img src="./assets/imagenes/slider/imagen3.jpg" class="d-block w-100" alt="...">
+                <img src="./assets/imagenes/slider/0001000553317WASSINTONG.jpg" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -89,16 +95,9 @@
         </button>
     </div>
     <div id="productos-scrool" class="product-container">
-        <div class="product">Producto 1</div>
-        <div class="product">Producto 2</div>
-        <div class="product">Producto 3</div>
-        <div class="product">Producto 4</div>
-        <div class="product">Producto 5</div>
-        <div class="product">Producto 6</div>
-        <div class="product">Producto 7</div>
-        <div class="product">Producto 8</div>
-        <div class="product">Producto 9</div>
-        <div class="product">Producto 10</div>
+        <div id="product" onclick="addToCart(0)"></div>
+        <div id="product" onclick="addToCart(1)"></div>
+        <div id="product" onclick="addToCart(2)"></div>
     </div>
     <section id="formulario-contacto" class="contactoContent">
         <form class="formularioContent">
@@ -169,3 +168,5 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
+
+<img src="./assets/imagenes/lavarropas/1.jpg" alt="">
