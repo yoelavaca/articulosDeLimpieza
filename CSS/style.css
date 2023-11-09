@@ -7,10 +7,20 @@
 
 
 body {
-    background-image: url(../assets/imagenes/fondo/4857721.jpg);
-    background-position: center;
     font-size: 16px;
 }
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../assets/imagenes/fondo/1150-21780.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+  }
 
 .superior {
     max-width: 100%;
@@ -69,11 +79,15 @@ button[type="submit"]:hover {
     background-color: #45a049;
 }
 
+/* scroll con los productos */
+
 .product-container {
+    background-color: #8b8b8b7a;
     height: 300px;
     overflow-y: scroll;
-    margin: 0;
-    padding: 5px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 300px;
 }
 
 .product {
@@ -98,6 +112,7 @@ button[type="submit"]:hover {
 
 .pie-de-pagina {
     font-family: 'Peralta', serif;
+    background-color: white;
 }
 
 .banner-superior {
@@ -107,16 +122,21 @@ button[type="submit"]:hover {
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+/* formulario y mapa */
+
 .formularioContent {
     padding: 10px;
     margin: 50px;
 }
 
 .contactoContent {
+    background-color: #fffcfcd3;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .map-container {
@@ -125,18 +145,12 @@ button[type="submit"]:hover {
     margin: 20px auto;
 }
 
-/* boton flotante */
+/* boton flotante arriba */
 
 .floating-button {
     position: fixed;
-    bottom: 20px;
     right: 20px;
     z-index: 9999;
-    padding: 10px;
-    background-color: #f44336;
-    color: white;
-    border: none;
-    border-radius: 50%;
     cursor: pointer;
 }
 
@@ -144,7 +158,21 @@ button[type="submit"]:hover {
     background-color: #d32f2f;
 }
 
-/* slider prueba */
+/* boton flotante wpp */
+
+.floating-button-wpp {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    top: 80%;
+  }
+  
+  #my-icon {
+    width: 40px;
+  }
+
+/* slider */
 
 .d-block {
     align-items: center;
@@ -173,4 +201,12 @@ button[type="submit"]:hover {
 .cart-items {
     list-style-type: none;
     padding: 0;
+}
+
+/* texto "nosotros" */
+
+.nosotrosP {
+    background-color: #fffcfcd3;
+    padding: 1%;
+    margin: 0;
 }

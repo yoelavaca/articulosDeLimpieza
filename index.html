@@ -10,8 +10,19 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <title>articulos de limpieza</title>
 </head>
+
 <body>
-    <button class="floating-button" onclick="scrollToTop()">Ir arriba</button>
+    <div class="background"></div>
+    <button class="floating-button" onclick="scrollToTop()">
+        <img src="./assets/imagenes/flecha-hacia-arriba.png" alt="Icono">
+    </button>
+
+    <div class="floating-button-wpp">
+        <a href="https://wa.me/5492226507849" target="_blank" id="my-link">
+          <img src="./assets/imagenes/whatsapp.png" alt="Icono" id="my-icon">
+        </a>
+      </div>
+
     <div class="banner-banner">
         <div>
             <a href="https://www.google.com.ar/maps/place/Plaza+principal+San+Miguel+del+monte/@-35.4414594,-58.7975799,15z/data=!4m6!3m5!1s0x95bd6916547d6b31:0x97c9165fe00827f5!8m2!3d-35.4410344!4d-58.8035117!16s%2Fg%2F11c3kmj33d?entry=ttu"
@@ -27,6 +38,7 @@
                     src="./assets/imagenes/instagram.png" alt="Instagram" style="width: 20px;">Instagram</a>
         </div>
     </div>
+
     <header class="superior-contenedor">
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
@@ -66,13 +78,8 @@
         </nav>
     </header>
     
-    <section id="quienes-somos" class="sectionNostrosContenedor">
-        <p class="nosotrosP"> Sobre nosotros:
-            Somos una empresa dedicada a ofrecer productos de limpieza de alta calidad. Nuestro objetivo es brindar
-            soluciones efectivas y seguras para el hogar y el trabajo. ¡Confía en nosotros para mantener tus espacios
-            limpios y relucientes!
-            ¡Gracias por elegirnos! 🌟</p>
-    </section>
+    
+
     <div id="carouselExample" class="carousel slide">
         <div class="carousel-inner">
             <div id="carousel-item-active" class="carousel-item active">
@@ -94,9 +101,11 @@
             <span class="visually-hidden">Siguiente</span>
         </button>
     </div>
+
     <div id="productos-scrool" class="product-container">
-        <div id="product" onclick="addToCart(0)"></div>
+        <div id="product" onclick="addToCart()"></div>
     </div>
+
     <section id="formulario-contacto" class="contactoContent">
         <form class="formularioContent">
             <fieldset>
@@ -132,7 +141,6 @@
                 <input type="reset" id="restablecer">
             </fieldset>
         </form>
-        <br>
         <div class="map-container">
             <iframe
                 src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13002.154203697575!2d-58.7975799!3d-35.4414594!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bd6916547d6b31%3A0x97c9165fe00827f5!2sPlaza%20principal%20San%20Miguel%20del%20monte!5e0!3m2!1ses-419!2sar!4v1696785742140!5m2!1ses-419!2sar"
@@ -140,7 +148,15 @@
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </section>
+
     <footer>
+        <section id="quienes-somos" class="sectionNostrosContenedor">
+            <p class="nosotrosP"> Sobre nosotros:
+                Somos una empresa dedicada a ofrecer productos de limpieza de alta calidad. Nuestro objetivo es brindar
+                soluciones efectivas y seguras para el hogar y el trabajo. ¡Confía en nosotros para mantener tus espacios
+                limpios y relucientes!
+                ¡Gracias por elegirnos! 🌟</p>
+        </section>
         <aside class="pie-de-pagina">
             <p>🧹 ¡Gracias por visitar nuestra tienda virtual de productos de limpieza! 🧽
                 <br>
@@ -166,5 +182,3 @@
         crossorigin="anonymous"></script>
 </body>
 </html>
-
-<img src="./assets/imagenes/lavarropas/1.jpg" alt="">
