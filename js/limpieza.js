@@ -32,12 +32,6 @@ function addToCart(index) {
     cartItems.appendChild(li);
 }
 
-
-
-
-
-// nuevo desde aca
-
 function ProductCard(name, price, image) {
     this.name = name;
     this.price = price;
@@ -63,8 +57,7 @@ function ProductCard(name, price, image) {
     };
 }
 
-
-//  carga de productos nuevos
+// productos nuevos
 var producto1 = new ProductCard("Producto 1", 19.99, "./assets/imagenes/lavarropas/1.jpg");
 producto1.insertProduct();
 
