@@ -145,32 +145,8 @@ button[type="submit"]:hover {
     margin: 20px auto;
 }
 
-/* boton flotante arriba */
-
-.floating-button {
-    position: fixed;
-    right: 20px;
-    z-index: 9999;
-    cursor: pointer;
-}
-
-.floating-button:hover {
-    background-color: #d32f2f;
-}
-
 /* boton flotante wpp */
 
-.floating-button-wpp {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    z-index: 9999;
-    top: 80%;
-  }
-  
-  #my-icon {
-    width: 40px;
-  }
 
 /* slider */
 
