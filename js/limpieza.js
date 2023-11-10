@@ -44,7 +44,6 @@ function ProductCard(name, price, image) {
     this.image = image;
 
     this.insertProduct = function () {
-        // Obtén el elemento de la tarjeta "product" donde deseas insertar los productos
         var productCard = document.getElementById("product");
 
         // Crea los elementos HTML para mostrar los detalles del producto
